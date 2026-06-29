@@ -29,6 +29,15 @@ st.markdown(
           width: min(42vw, 700px) !important;
           max-width: min(42vw, 700px) !important;
       }
+      /* Colonne email/profil du header : centree verticalement plutot qu'en haut */
+      div[data-testid="stVerticalBlock"]:has(p[style*="text-align"]) {
+          justify-content: center !important;
+      }
+      /* Colonne bouton Se connecter/Deconnexion du header : meme espacement vertical */
+      div[data-testid="stVerticalBlock"]:has([style*="margin-top: 10px"]) {
+          gap: 2rem !important;
+          justify-content: center !important;
+      }
 
       /* ── Palette bleue (remplace le rouge par defaut Streamlit) ──────────
          Cible les attributs stables (data-testid / role / data-baseweb) plutot
