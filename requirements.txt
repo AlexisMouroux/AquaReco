@@ -6,9 +6,12 @@ matplotlib>=3.7
 seaborn>=0.12
 requests>=2.28
 scipy>=1.11
+joblib>=1.4
 
 # Modèles ML supplémentaires
 xgboost>=2.0
+lightgbm>=4.0
+imbalanced-learn>=0.12
 shap>=0.44
 
 # Stockage PostgreSQL/PostGIS
@@ -17,6 +20,12 @@ python-dotenv>=1.0
 
 # Carte choroplèthe (optionnel)
 geopandas>=0.14
+
+# Dashboard Streamlit
+streamlit>=1.40
+streamlit-folium>=0.20
+folium>=0.16
+plotly>=5.20
 
 # Géolocalisation navigateur (dashboard, onglet Carte)
 streamlit-js-eval>=1.0
