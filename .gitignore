@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Secrets / config locale
+.env
+
+# Base SQLite locale (recréée automatiquement par database/db.py::init_db())
+#database/aquareco.db
+
+# Sorties du pipeline data-science : tout ignoré, sauf les fichiers dont
+# le dashboard a besoin au runtime (voir dashboard/data_loader.py et
+# dashboard/recommandation.py).
+outputs/*
+!outputs/features_temporal.parquet
+!outputs/model_qualite.pkl
+!outputs/feature_columns.pkl
+!outputs/sites_scores.csv
